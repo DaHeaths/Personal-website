@@ -21,5 +21,6 @@ module.exports = {
       { text: 'Resume', link: '/Resume/' },
       { text: 'GitHub', link: 'https://google.com' },
     ]
-  }
+  },
+  base: '/Personal-website/'
 }
