@@ -22,5 +22,5 @@ module.exports = {
       { text: 'GitHub', link: 'https://google.com' },
     ]
   },
-  base: '/Personal-website/'
+  base: '/Personal-website/dist/'
 }
