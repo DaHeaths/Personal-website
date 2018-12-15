@@ -4,12 +4,12 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/hero  .jpg' }]
   ],
-  themeConfig: {
+  themeConfig: { 
     nav: [
       {
         text: 'Blog',
         items: [
-          { text: 'JavaScript', link: '/Blog/JavaScript/' },
+          { text: 'JavaScript', link: '/JavaScript/' },
           { text: 'CSS', link: '/Blog/CSS/' },
           { text: 'HTTP', link: '/Blog/HTTP/' },
           { text: 'Library', link: '/Blog/Library/' },
@@ -20,7 +20,15 @@ module.exports = {
       { text: 'Project', link: '/Project/' },
       { text: 'Resume', link: '/Resume/' },
       { text: 'GitHub', link: 'https://google.com' },
-    ]
+    ],
+    displayAllHeaders: true,
+    sidebar: {
+      '/JavaScript/': [
+        '',     /* /foo/ */
+        'aa',  /* /foo/one.html */
+        'add'   /* /foo/two.html */
+      ]
+    }
   },
   base: '/Personal-website/dist/'
 }
