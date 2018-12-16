@@ -21,12 +21,17 @@ module.exports = {
       { text: 'Resume', link: '/Resume/' },
       { text: 'GitHub', link: 'https://google.com' },
     ],
-    displayAllHeaders: true,
     sidebar: {
       '/JavaScript/': [
-        '',     /* /foo/ */
-        'aa',  /* /foo/one.html */
-        'add'   /* /foo/two.html */
+        '',
+        'shallow-copy',
+        'sort' ,
+        'event-model',
+        'inherit',
+        'this',
+        'event-commission',
+        'let&const',
+        '=>'
       ]
     }
   },
