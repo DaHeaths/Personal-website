@@ -4,34 +4,55 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/hero  .jpg' }]
   ],
-  themeConfig: { 
+  themeConfig: {
     nav: [
       {
         text: 'Blog',
         items: [
           { text: 'JavaScript', link: '/JavaScript/' },
-          { text: 'CSS', link: '/Blog/CSS/' },
-          { text: 'HTTP', link: '/Blog/HTTP/' },
-          { text: 'Library', link: '/Blog/Library/' },
-          { text: 'Other', link: '/Blog/Other/' },
-          { text: 'Wheel', link: '/Blog/Wheel/' },
+          { text: 'CSS', link: '/CSS/' },
+          { text: 'HTTP', link: '/HTTP/' },
+          { text: 'Library', link: '/Library/' },
+          { text: 'Other', link: '/Other/' },
+          { text: 'Wheel', link: '/Wheel/' },
         ]
       },
       { text: 'Project', link: '/Project/' },
       { text: 'Resume', link: '/Resume/' },
-      { text: 'GitHub', link: 'https://google.com' },
+      { text: 'GitHub', link: 'https://github.com/hubingliang' },
     ],
     sidebar: {
       '/JavaScript/': [
         '',
         'shallow-copy',
-        'sort' ,
+        'sort',
         'event-model',
         'inherit',
         'this',
         'event-commission',
         'let&const',
-        '=>'
+        '=>',
+        'requestAnimationFrame',
+        'Browser'
+      ],
+      '/CSS/': [
+        '',
+        '47css-trick',
+        'rem',
+        'clear-float'
+      ],
+      '/HTTP/': [
+        '',
+        'security',
+        'caching',
+        'status-code'
+      ],
+      '/Library/': [
+        '',
+        'emoji'
+      ],
+      '/Wheel/': [
+        ''
       ]
     }
   },
