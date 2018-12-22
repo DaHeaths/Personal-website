@@ -2,7 +2,7 @@ module.exports = {
   title: 'Brown Hu',
   description: 'Replace the stars and rivers in the body with unlimited methods for the future.',
   head: [
-    ['link', { rel: 'icon', href: '/hero  .jpg' }]
+    ['link', { rel: 'icon', href: '/favicon.png' }]
   ],
   themeConfig: {
     nav: [
@@ -13,7 +13,6 @@ module.exports = {
           { text: 'CSS', link: '/CSS/' },
           { text: 'HTTP', link: '/HTTP/' },
           { text: 'Library', link: '/Library/' },
-          { text: 'Other', link: '/Other/' },
           { text: 'Wheel', link: '/Wheel/' },
         ]
       },
@@ -31,7 +30,7 @@ module.exports = {
         'this',
         'event-commission',
         'let&const',
-        '=>',
+        'qqq',
         'requestAnimationFrame',
         'Browser'
       ],
