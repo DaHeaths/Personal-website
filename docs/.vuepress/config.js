@@ -55,5 +55,5 @@ module.exports = {
       ]
     }
   },
-  base: '/Personal-website/dist/'
+  base: '/'
 }
