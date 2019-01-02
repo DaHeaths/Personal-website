@@ -32,7 +32,9 @@ module.exports = {
         'let&const',
         'qqq',
         'requestAnimationFrame',
-        'Browser'
+        'Browser',
+        // 'deep-copy',
+        'type'
       ],
       '/CSS/': [
         '',
