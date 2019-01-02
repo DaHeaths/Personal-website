@@ -138,3 +138,4 @@ Object.prototype.toString.call(new WeakMap()) // "[object WeakMap]",/'.lk
 ```
 
 可以说`Object.prototype.toString.call()`在大部分类型的考验下都不落下风，可以说是比较完美的类型检查了。
+至于原理大家可以移步至[谈谈 Object.prototype.toString](https://segmentfault.com/a/1190000009407558)
