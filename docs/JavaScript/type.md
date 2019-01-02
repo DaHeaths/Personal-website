@@ -2,9 +2,13 @@
 
 ![](https://images.unsplash.com/photo-1426901555017-389235de7b0d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&h=500&fit=crop&ixid=eyJhcHBfaWQiOjF9)
 
-类型检查在各种强类型语言（Typescript、Flow.js）出现之前一直是我们手动检查的，检查的方式也是多种多样。本文尽量总结出所有类型最优的检查方式，当然拥抱强类型我觉得才是未来。
+> 本文首发于我的个人博客 ：[brownhu.site](http://brownhu.site/)
 
-es6 之后新加入了 Symbol 类型，目前为止 JavaScript 一共有 7 种类型，但其中还有分类（set WeakSet Map WeakMap），我们就从这些类型来探索：
+## 前言
+
+类型检查在各种强类型语言（Typescript、Flow.js）出现之前一直是我们手动检查的，检查的方式也是多种多样。本文尽量总结出所有类型最优的检查方式，和解释所有方式的原理，如果有错误请各位大佬指正，除此之外对于类型检查当然拥抱强类型我觉得才是未来。
+
+es6 之后新加入了 Symbol 类型，目前为止 JavaScript 一共有 7 种类型，但其中还有分类（set WeakSet Map WeakMap），我们就基于这些类型来探索：
 
 -   null
 -   undefined
@@ -75,6 +79,21 @@ JavaScript 在底层储存变量时出于性能考虑会把数据的类型用前
 ## instanceof
 
 instanceof 是有局限性的，它要求判断的目标必须是一个对象，与此同时 instanceof 的原理是判断只要右边的 prototype 出现在左边的原型链上就返回 true。所以说 instanceof 是判断一个实例是否是其父类型或者祖先类型的实例更为恰当。
+
+代码的基本实现：
+```js
+function instance_of(L, R) {    // L 表示左表达式，R 表示右表达式
+ var O = R.prototype;           // 取 R 的显示原型
+ L = L.__proto__;               // 取 L 的隐式原型
+ while (true) { 
+   if (L === null) 
+     return false; 
+   if (O === L)                 // 当 O 严格等于 L 时，返回 true 
+     return true; 
+   L = L.__proto__; 
+ } 
+}
+```
 
 还是看例子比较直接：
 
