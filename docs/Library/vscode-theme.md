@@ -11,6 +11,9 @@
 [github 在这里](https://github.com/hubingliang/Duang)
 
 ![](https://user-gold-cdn.xitu.io/2019/4/18/16a303c83daf3bb6?w=1514&h=450&f=png&s=107690)
+
+![](https://user-gold-cdn.xitu.io/2019/4/18/16a3062d5015d575?w=1920&h=1057&f=png&s=327708)
+
 如果你也对编辑器有自己独特风格的偏好，但是在成千上万款主题中又没有一款主题完全符合你的口味，那么跟着下面的流程我们自己动手做一个完全符合自己风格的主题吧。
 
 ****
